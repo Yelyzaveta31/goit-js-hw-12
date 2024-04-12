@@ -1,0 +1,37 @@
+
+form {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  input {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 272px;
+    padding: 8px 16px;
+    font-family: inherit;
+    outline: none;
+  
+    transition: borderColor 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  input:hover {
+    border-color: #000;
+  }
+  input:focus {
+    border-color: #4e75ff;
+  }
+  button {
+    font-family: inherit;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    background-color: #4e75ff;
+    color: white;
+    padding: 8px 16px;
+    transition: backgroundColor 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  button:hover {
+    background-color: #6c8cff;
+  }
