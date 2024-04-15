@@ -14,7 +14,7 @@ const loadMorebtn = document.querySelector('.load-more-btn');
 
 
 let currentPage = 1;
-let searchQuery = null;
+let searchQuery;
 let totalHits  = 0;
 let per_page = 15;
 
@@ -37,11 +37,9 @@ const refreshGallery = (formEl, errorMessage) => {
     });
     removeLoadMoreBtn();
 };
-
-
 const searchFormSubmit = async event => {
   try {event.preventDefault();
-  const searchQuery = event.target.elements.user_image.value.trim();
+  searchQuery = event.target.elements.user_image.value.trim();
   currentPage = 1;
   if (searchQuery === '') {
     gallery.innerHTML = '';
