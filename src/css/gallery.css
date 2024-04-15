@@ -13,8 +13,8 @@
   }
   .gallery-item {
     width: 360px;
+    height: 200px;
     border: 1px solid #808080;
-    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
@@ -74,3 +74,31 @@
     .loader.is-visible{
       display: inline-block;
     }
+
+
+   
+    .load-more-btn.loader.is-visible{
+      display: inline-block;
+    }
+    .load-more-btn {
+      width: 125px;
+      margin: 0 auto;
+      margin-top: 32px;
+  margin-bottom: 44px;
+  display: block;
+  cursor: pointer;
+  transition: background-color 250ms linear;}
+    
+  .load-more-btn.is-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    display: none;
+  }
